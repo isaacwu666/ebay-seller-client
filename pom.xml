@@ -4,12 +4,12 @@
 
     <groupId>com.nextop</groupId>
     <artifactId>ebay-seller-client</artifactId>
-    <version>1.0.0.beta-SNAPSHOT</version>
+    <version>1.0.3-RELEASE</version>
 
     <packaging>jar</packaging>
     <name>ebay-seller-client</name>
 
-    <url>https://github.com/openapitools/openapi-generator</url>
+    <url>https://github.com/isaacwu666/ebay-seller-client</url>
     <description>ebay-seller-client</description>
 
     <licenses>
@@ -31,7 +31,21 @@
 
     <build>
         <plugins>
-           <plugin>
+            <!--api包上传源码便于查看注释-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
